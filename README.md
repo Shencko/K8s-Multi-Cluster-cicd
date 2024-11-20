@@ -11,7 +11,7 @@ This project implements a robust Continuous Integration and Continuous Deploymen
 • Unit Testing: Automated unit tests are executed to validate application functionality.
 • Trivy Scan: Security scans are conducted to detect vulnerabilities in dependencies.
 • Code Quality Check: SonarQube is used to ensure the code meets quality standards.
-**• Build Process:**
+**• Build Process:**  
 • The application is compiled and packaged.
 • A Docker image is built and tagged for the development phase.
 

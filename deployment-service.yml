@@ -27,10 +27,10 @@ kind: Service # Kubernetes resource kind we are creating
 metadata: # Metadata of the resource kind we are creating
   name: taskmaster-ssvc
 spec:
+  type: NodePort
   selector:
     app: taskmaster
   ports:
-    - protocol: "TCP"
-      port: 80
-      targetPort: 8080 
-  type: LoadBalancer # type of the service.
+    - port: 80 # Port exposed by the NodePort
+      targetPort: 8080  # Port on which the container is running
+      nodePort: 30080
